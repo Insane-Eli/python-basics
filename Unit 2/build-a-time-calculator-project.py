@@ -19,8 +19,8 @@ def add_time(start, duration, day=''):
     
     total_minutes = start_minutes + duration_minutes_total
     new_minutes = total_minutes % 60
-    new_hours = int((total_minutes / 60) % 24)  # Replacing floor division
-    days_later = int(total_minutes / (60 * 24))  # Replacing floor division
+    new_hours = int((total_minutes / 60) % 24)
+    days_later = int(total_minutes / (60 * 24))
     new_day = ""
     
     if day:
